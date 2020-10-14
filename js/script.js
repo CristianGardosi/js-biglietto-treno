@@ -16,7 +16,20 @@ console.log('Età inserita: ', età);
 
 if ( isNaN(età) ){
     window.alert('Inserire un dato numerico valido');
-    console.log('Operazione non eseguibile');
+    console.log('Operazione non eseguibile'); 
 }
+
+// Prezzo base senza sconti
+var prezzoBase = ( km * 0.21 );
+    console.log('Prezzo base biglietto: ', km * 0.21 + ' $');
+
+if (età > 65){
+    console.log('Prezzo biglietto over 65: ', prezzoBase - 40 + ' $');
+}
+
+else if (età < 18 ){
+    console.log('Prezzo biglietto under 18: ', prezzoBase - 20 + ' $');
+}
+
 
 
