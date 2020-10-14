@@ -19,19 +19,32 @@ if ( isNaN(età) ){
     console.log('Operazione non eseguibile'); 
 }
 
-// Prezzo base senza sconti
+// Calcorezzo base senza sconti
 var prezzo = ( km * 0.21 );
     console.log('Prezzo base biglietto: ', km * 0.21 + ' $');
 // Sconto over 65
 if (età > 65){
     console.log('Prezzo biglietto over 65: ', prezzo * 0.60 + ' $');
+
+var prezzoScontato = prezzo * 0.60;
+    document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzoScontato.toFixed(2) + ' $';
 }
 // Sconto under 18
-else if (età < 18 ){
+else if (età < 18){
     console.log('Prezzo biglietto under 18: ', prezzo * 0.80 + ' $');
+var prezzoScontato = prezzo * 0.80;
+    document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzoScontato.toFixed(2) + ' $';
+}
+// 
+else{
+    document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzo.toFixed(2) + ' $';
 }
 
-//Prezzo biglietto sulla pagina HTML 
-document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzo + ' $';
+
+
+
+
+
+
 
 
