@@ -22,13 +22,13 @@ if ( isNaN(età) ){
 // Prezzo base senza sconti
 var prezzoBase = ( km * 0.21 );
     console.log('Prezzo base biglietto: ', km * 0.21 + ' $');
-
+// Sconto over 65
 if (età > 65){
-    console.log('Prezzo biglietto over 65: ', prezzoBase - 40 + ' $');
+    console.log('Prezzo biglietto over 65: ', prezzoBase * 0.60 + ' $');
 }
-
+// Sconto under 18
 else if (età < 18 ){
-    console.log('Prezzo biglietto under 18: ', prezzoBase - 20 + ' $');
+    console.log('Prezzo biglietto under 18: ', prezzoBase * 0.80 + ' $');
 }
 
 
