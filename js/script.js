@@ -31,8 +31,7 @@ else if (età < 18 ){
     console.log('Prezzo biglietto under 18: ', prezzo * 0.80 + ' $');
 }
 
-
-
-document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzo + '$';
+//Prezzo biglietto sulla pagina HTML 
+document.getElementById('ticketprice').innerHTML = 'Il prezzo del biglietto per la tratta selezionata è di: ' + prezzo + ' $';
 
 
